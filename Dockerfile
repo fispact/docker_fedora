@@ -1,4 +1,4 @@
-FROM fedora:27
+FROM fedora:26
 MAINTAINER UKAEA <admin@fispact.ukaea.uk>
 
 # Build-time metadata as defined at http://label-schema.org
@@ -25,6 +25,7 @@ WORKDIR /
 RUN yum install -y wget which make less doxygen rsync nano && \
     yum install -y cpio libgcc gcc gcc-c++ gcc-gfortran && \
     yum install -y libgfortran-static libstdc++-static && \
+    yum install -y libstdc++.i686 libgcc.i686 && \
     yum install -y cmake python3 git && \
     pip3 install --upgrade pip && \
     pip3 install pytest pytest-xdist pypact
