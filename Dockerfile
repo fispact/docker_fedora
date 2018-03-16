@@ -26,7 +26,7 @@ RUN yum install -y wget which make less doxygen rsync nano && \
     yum install -y cpio libgcc gcc gcc-c++ gcc-gfortran && \
     yum install -y libgfortran-static libstdc++-static && \
     yum install -y libstdc++.i686 libgcc.i686 && \
-    yum install -y cmake python3 git && \
+    yum install -y cmake python3 python3-devel git && \
     pip3 install --upgrade pip && \
     pip3 install pytest pytest-xdist pypact
 
