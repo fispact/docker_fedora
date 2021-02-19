@@ -1,4 +1,4 @@
-FROM fedora:26
+FROM fedora:29
 MAINTAINER UKAEA <admin@fispact.ukaea.uk>
 
 # Build-time metadata as defined at http://label-schema.org
