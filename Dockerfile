@@ -1,4 +1,4 @@
-FROM fedora:27
+FROM fedora:33
 MAINTAINER UKAEA <admin@fispact.ukaea.uk>
 
 # Build-time metadata as defined at http://label-schema.org
@@ -18,7 +18,7 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.schema-version="1.0"
 
 # some environment variables for regression testing
-ENV FISPACT_SYSTEM_TESTS_REF fedora_26_gfortran_7_xsbinaries
+ENV FISPACT_SYSTEM_TESTS_REF fedora_33_gfortran_7_xsbinaries
 ENV PYTHONDONTWRITEBYTECODE 1.
 ENV PYTEST_VERBOSE line
 
