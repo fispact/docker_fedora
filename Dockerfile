@@ -32,6 +32,7 @@ RUN yum install -y wget which make less doxygen rsync nano && \
     yum install -y libgfortran-static libstdc++-static && \
     yum install -y cmake python3 python3-devel git && \
     pip3 install --upgrade pip && \
-    pip3 install pytest pytest-xdist pypact
+    pip3 install pytest pytest-xdist pypact && \
+    dnf install glibc-static libstdc++-static -y
 
 CMD /bin/bash $RUN_SCRIPT
